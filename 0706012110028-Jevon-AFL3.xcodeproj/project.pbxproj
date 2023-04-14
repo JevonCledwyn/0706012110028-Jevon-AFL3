@@ -16,6 +16,8 @@
 		0427FB2929E4EE8700791D1B /* _706012110028_Jevon_AFL3UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0427FB2829E4EE8700791D1B /* _706012110028_Jevon_AFL3UITestsLaunchTests.swift */; };
 		0427FB3629E4F91700791D1B /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0427FB3529E4F91700791D1B /* CircleImage.swift */; };
 		047A4F7129E8E988002E7E37 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047A4F7029E8E988002E7E37 /* MapView.swift */; };
+		047A4F7329E8F1C1002E7E37 /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = 047A4F7229E8F1C1002E7E37 /* landmarkData.json */; };
+		047A4F7529E8F329002E7E37 /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047A4F7429E8F329002E7E37 /* Landmark.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		0427FB2829E4EE8700791D1B /* _706012110028_Jevon_AFL3UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _706012110028_Jevon_AFL3UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0427FB3529E4F91700791D1B /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		047A4F7029E8E988002E7E37 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		047A4F7229E8F1C1002E7E37 /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
+		047A4F7429E8F329002E7E37 /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,7 @@
 		0427FAFF29E4EE8500791D1B = {
 			isa = PBXGroup;
 			children = (
+				047A4F7229E8F1C1002E7E37 /* landmarkData.json */,
 				0427FB0A29E4EE8500791D1B /* 0706012110028-Jevon-AFL3 */,
 				0427FB1B29E4EE8700791D1B /* 0706012110028-Jevon-AFL3Tests */,
 				0427FB2529E4EE8700791D1B /* 0706012110028-Jevon-AFL3UITests */,
@@ -104,6 +109,7 @@
 				047A4F7029E8E988002E7E37 /* MapView.swift */,
 				0427FB0F29E4EE8700791D1B /* Assets.xcassets */,
 				0427FB1129E4EE8700791D1B /* Preview Content */,
+				047A4F7429E8F329002E7E37 /* Landmark.swift */,
 			);
 			path = "0706012110028-Jevon-AFL3";
 			sourceTree = "<group>";
@@ -239,6 +245,7 @@
 			files = (
 				0427FB1329E4EE8700791D1B /* Preview Assets.xcassets in Resources */,
 				0427FB1029E4EE8700791D1B /* Assets.xcassets in Resources */,
+				047A4F7329E8F1C1002E7E37 /* landmarkData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +274,7 @@
 				047A4F7129E8E988002E7E37 /* MapView.swift in Sources */,
 				0427FB0C29E4EE8500791D1B /* _706012110028_Jevon_AFL3App.swift in Sources */,
 				0427FB3629E4F91700791D1B /* CircleImage.swift in Sources */,
+				047A4F7529E8F329002E7E37 /* Landmark.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
