@@ -6,7 +6,8 @@
 //
 
 import Foundation
-//load protocol codable
+
+//load protocol codeable
 
 var landmarks: [Landmark] = load("landmarkData.json")
 

@@ -16,27 +16,24 @@ struct Landmark: Hashable, Codable, Identifiable {
     var park: String
     var state: String
     var description: String
-    
-    
+
     //menambah imageName property
     private var imageName: String
     var image: Image {
         Image(imageName)
     }
-    
+
     //menambahkan properti koordinat pada struktur
     private var coordinates: Coordinates
-    
-    //properti locationCoordinate
-
     var locationCoordinate: CLLocationCoordinate2D {
-            CLLocationCoordinate2D(
-                latitude: coordinates.latitude,
-                longitude: coordinates.longitude)
-        }
+        CLLocationCoordinate2D(
+            latitude: coordinates.latitude,
+            longitude: coordinates.longitude)
+    }
 
-        struct Coordinates: Hashable, Codable {
-            var latitude: Double
-            var longitude: Double
-        }
+    //properti locationCoordinate
+    struct Coordinates: Hashable, Codable {
+        var latitude: Double
+        var longitude: Double
+    }
 }
