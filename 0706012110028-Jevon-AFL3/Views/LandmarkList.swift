@@ -28,4 +28,3 @@ struct LandmarkList_Previews: PreviewProvider {
     }
 }
 
-
