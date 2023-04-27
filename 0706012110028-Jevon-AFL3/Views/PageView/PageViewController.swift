@@ -11,6 +11,8 @@ import UIKit
 // view controller stores an array of Page instances
 struct PageViewController<Page: View>: UIViewControllerRepresentable {
     var pages: [Page]
+    //add binding as property
+    @Binding var currentPage: Int
     
     // another method to PageViewController
     func makeCoordinator() -> Coordinator {
@@ -29,7 +31,7 @@ struct PageViewController<Page: View>: UIViewControllerRepresentable {
     func updateUIViewController(_ pageViewController: UIPageViewController, context: Context) {
         pageViewController.setViewControllers(
             // nitialize an array of controllers
-            [context.coordinator.controllers[0]], direction: .forward, animated: true)
+            [context.coordinator.controllers[currentPage]], direction: .forward, animated: true)
     }
     
     // Declare a nested Coordinator
