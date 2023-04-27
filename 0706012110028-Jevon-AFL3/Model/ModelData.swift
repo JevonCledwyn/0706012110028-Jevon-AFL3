@@ -13,6 +13,8 @@ final class ModelData: ObservableObject {
     @Published var landmarks: [Landmark] = load("landmarkData.json")
     // Load hikes array into your model object
     var hikes: [Hike] = load("hikeData.json")
+    // update model data class
+    @Published var profile = Profile.default
     
     // new computed features array
     var features: [Landmark] {
