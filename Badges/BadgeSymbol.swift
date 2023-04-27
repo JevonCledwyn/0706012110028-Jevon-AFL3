@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct BadgeSymbol: View {
-    // Fill the symbol with the purple color
+    //fill purple
     static let symbolColor = Color(red: 79.0 / 255, green: 79.0 / 255, blue: 191.0 / 255)
 
     var body: some View {
-        // top portion of the symbol
+        // top portion
         GeometryReader { geometry in
             Path { path in
                 let width = min(geometry.size.width, geometry.size.height)
@@ -30,7 +30,7 @@ struct BadgeSymbol: View {
                     CGPoint(x: middle, y: spacing)
                 ])
                 
-                // bottom portion of the symbol
+                // bottom portion
                 path.move(to: CGPoint(x: middle, y: topHeight / 2 + spacing * 3))
                 path.addLines([
                     CGPoint(x: middle - topWidth, y: topHeight + spacing),
