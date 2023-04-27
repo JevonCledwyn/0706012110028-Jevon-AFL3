@@ -11,6 +11,8 @@ import Combine
 // Declare a new model type
 final class ModelData: ObservableObject {
     @Published var landmarks: [Landmark] = load("landmarkData.json")
+    // Load hikes array into your model object
+    var hikes: [Hike] = load("hikeData.json")
 }
 
 //load protocol codeable
