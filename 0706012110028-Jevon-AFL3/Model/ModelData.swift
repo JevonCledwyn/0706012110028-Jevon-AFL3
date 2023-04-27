@@ -13,6 +13,13 @@ final class ModelData: ObservableObject {
     @Published var landmarks: [Landmark] = load("landmarkData.json")
     // Load hikes array into your model object
     var hikes: [Hike] = load("hikeData.json")
+    // add computed categories dictionary
+    var categories: [String: [Landmark]] {
+            Dictionary(
+                grouping: landmarks,
+                by: { $0.category.rawValue }
+            )
+        }
 }
 
 //load protocol codeable

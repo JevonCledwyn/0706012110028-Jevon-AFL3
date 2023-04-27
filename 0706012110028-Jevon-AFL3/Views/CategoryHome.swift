@@ -8,12 +8,19 @@
 import SwiftUI
 
 struct CategoryHome: View {
+// create a modelData environment object
+    @EnvironmentObject var modelData: ModelData
+
     var body: some View {
         // add navigation view
         NavigationView {
-            Text("Hello, World!")
-            // Set the title to Featured
-                .navigationTitle("Featured")
+            // Display the categories in Landmarks using a List
+            List {
+                ForEach(modelData.categories.keys.sorted(), id: \.self) { key in
+                    Text(key)
+                }
+            }
+            .navigationTitle("Featured")
         }
     }
 }
@@ -21,5 +28,6 @@ struct CategoryHome: View {
 struct CategoryHome_Previews: PreviewProvider {
     static var previews: some View {
         CategoryHome()
+            .environmentObject(ModelData())
     }
 }
