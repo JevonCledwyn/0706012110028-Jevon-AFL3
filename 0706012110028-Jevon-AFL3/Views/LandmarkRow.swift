@@ -18,11 +18,19 @@ struct LandmarkRow: View {
             Text(landmark.name)
 
             Spacer()
+            
+            // untuk menguji apakah landmark terpilih yang favorit
+            if landmark.isFavorite {
+                Image(systemName: "star.fill")
+                    .foregroundColor(.yellow)
+            }
         }
     }
 }
 
 struct LandmarkRow_Previews: PreviewProvider {
+    static var landmarks = ModelData().landmarks
+
     static var previews: some View {
         Group {
             LandmarkRow(landmark: landmarks[0])

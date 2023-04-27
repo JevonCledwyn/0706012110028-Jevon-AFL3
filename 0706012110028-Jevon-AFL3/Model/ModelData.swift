@@ -6,6 +6,12 @@
 //
 
 import Foundation
+import Combine
+
+// Declare a new model type
+final class ModelData: ObservableObject {
+    @Published var landmarks: [Landmark] = load("landmarkData.json")
+}
 
 //load protocol codeable
 
