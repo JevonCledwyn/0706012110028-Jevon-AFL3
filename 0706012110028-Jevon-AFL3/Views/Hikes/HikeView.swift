@@ -32,7 +32,14 @@ struct HikeView: View {
                         .labelStyle(.iconOnly)
                         .imageScale(.large)
                         .rotationEffect(.degrees(showDetail ? 90 : 0))
+//                    // turning off animation
+//                        .animation(nil, value: showDetail)
+                        .scaleEffect(showDetail ? 1.5 : 1)
                         .padding()
+//                    // animation modifier
+//                        .animation(.easeInOut, value: showDetail)
+//                    // Change the animation type
+//                        .animation(.spring(), value: showDetail)
                 }
             }
 
