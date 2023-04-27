@@ -32,6 +32,11 @@ struct Landmark: Hashable, Codable, Identifiable {
     var image: Image {
         Image(imageName)
     }
+    // Add computed property
+    var featureImage: Image? {
+        isFeatured ? Image(imageName + "_feature") : nil
+    }
+
 
     //menambahkan properti koordinat pada struktur
     private var coordinates: Coordinates
