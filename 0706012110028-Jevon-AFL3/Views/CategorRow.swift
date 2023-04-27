@@ -7,26 +7,25 @@
 
 import SwiftUI
 
-struct CategorRow: View {
-    // add properties for category name and list item
+struct CategoryRow: View {
     var categoryName: String
     var items: [Landmark]
-    
+
     var body: some View {
         VStack(alignment: .leading) {
-            // display name of the category
             Text(categoryName)
                 .font(.headline)
-            // specifying a tall frame
                 .padding(.leading, 15)
                 .padding(.top, 5)
-            
-            // larger sampling of data
+
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .top, spacing: 0) {
                     ForEach(items) { landmark in
-                        // new CategoryItem view
-                        CategoryItem(landmark: landmark)
+                        NavigationLink {
+                            LandmarkDetail(landmark: landmark)
+                        } label: {
+                            CategoryItem(landmark: landmark)
+                        }
                     }
                 }
             }
